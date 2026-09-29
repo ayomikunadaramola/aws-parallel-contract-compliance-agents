@@ -32,6 +32,7 @@ The workflow follows a **fan-out / fan-in** pattern:
                             |
                             v
                  Compliance Recommendation
+```
 
 ## Author
 
