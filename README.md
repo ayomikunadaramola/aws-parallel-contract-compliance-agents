@@ -34,6 +34,36 @@ The workflow follows a **fan-out / fan-in** pattern:
                  Compliance Recommendation
 ```
 
+## Execution Results
+
+The multi-agent workflow was tested against contracts with different risk profiles to verify that the specialist agents could execute independently, synthesize their findings, and produce an appropriate compliance recommendation.
+
+### Low-Risk Contract Analysis
+
+The system successfully evaluated a low-risk cloud infrastructure vendor agreement. The Regulatory, Financial Risk, and IP Protection agents independently returned low-risk findings before the Synthesizer Agent consolidated the results into an **APPROVE** recommendation.
+
+![Low-Risk Contract Analysis](screenshots/05-low-risk-contract-result.png)
+
+### High-Risk Contract Analysis
+
+The workflow was also tested against a higher-risk offshore development outsourcing contract. The specialist agents identified regulatory violations, unfavorable financial terms, and intellectual property concerns. The Synthesizer Agent consolidated these findings and produced a **REJECT** recommendation.
+
+![High-Risk Contract Analysis](screenshots/06-high-risk-contract-result.png)
+
+### Parallel Agent Execution
+
+The three specialist agents execute concurrently using Python's `ThreadPoolExecutor`. Once all three analyses are complete, their findings are passed to the Synthesizer Agent for the final compliance assessment.
+
+![Parallel Agent Execution](screenshots/04-parallel-execution-engine.png)
+
+### Final Validation
+
+The completed implementation was checked for unfinished placeholders and validated using Python compilation.
+
+![Final Validation](screenshots/final-validation-passed.png)
+
+The final validation completed successfully, confirming that the Python implementation compiles without syntax errors.
+
 ## Author
 
 **Ayomikun Adaramola**
