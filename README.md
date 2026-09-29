@@ -40,7 +40,3 @@ The workflow follows a **fan-out / fan-in** pattern:
 Senior Data Engineer | AI & Cloud Engineering | Agentic AI
 
 Developed as part of the **Udacity AWS Future Agentic AI Engineer Nanodegree**.
-
-## License
-
-This project is licensed under the terms provided in the [LICENSE](LICENSE) file.
